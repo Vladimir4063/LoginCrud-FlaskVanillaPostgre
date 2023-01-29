@@ -1,0 +1,47 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSWATCH -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="../static/main.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-md-4 offset-md-4">
+            <h1 class="text-center">Login CRUD</h1>
+            <form id="taskForm" class="card card-body" style="background-color: #fff">
+
+                <!-- <label for="username">Username</label> -->
+                <input type="text"
+                name="title"
+                placeholder="Title"
+                class="form-control mb-3"
+                required
+                >
+
+                <textarea type="email"
+                name="task"
+                placeholder="Task"
+                class="form-control mb-3"
+                required
+                ></textarea>
+
+                <button class="btn btn-primary">Save</button>
+
+            </form>
+
+            <button class="btn btn-warning float-right"><a href="/dropsession" style="text-decoration: none;color: white;" >Logout</a></button>
+
+            <ul id="taskList" class="list-group">
+            </ul>
+        </div>
+
+    </div>
+    <script src="../static/main.js"></script>
+</body>
+</html>
